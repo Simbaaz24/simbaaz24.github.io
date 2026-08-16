@@ -227,7 +227,20 @@
             </div>
         </div>
     </section>
+<script>
+    // 1. Hier legst du dein geheimes Passwort fest
+    var passwort = "geheim123";
 
+    // 2. Es poppt ein Fenster auf, das nach dem Passwort fragt
+    var eingabe = prompt("Diese Seite ist geschützt. Bitte Passwort eingeben:");
+
+    // 3. Prüfung: Stimmt die Eingabe nicht mit dem Passwort überein?
+    if (eingabe !== passwort) {
+        alert("Falsches Passwort! Zugriff verweigert.");
+        // Leitet den Besucher bei falschem Passwort zu Google um
+        window.location.href = "https://www.google.de";
+    }
+</script>
     <!-- Footer -->
     <footer id="contact">
         <h3>[Kontakt / Abschlusswort]</h3>
